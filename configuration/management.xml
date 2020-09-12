@@ -19,6 +19,7 @@
    <!--<connector connector-port="1099"/>-->
    <authorisation>    
      <whitelist></whitelist>
+     <default-access></default-access>
      <role-access>
          <match domain="org.apache.activemq.artemis">
             <access method="list*" roles="admin"/>
