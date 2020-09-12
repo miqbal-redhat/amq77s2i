@@ -1,0 +1,13 @@
+<role-access>
+    <match domain="org.apache.activemq.artemis">
+        <access method="list*" roles="${view_and_admin_groups}"/>
+        <access method="get*" roles="${view_and_admin_groups}"/>
+        <access method="is*" roles="${view_and_admin_groups}"/>
+        <access method="set*" roles="${admin_groups}"/>
+        <access method="browse*" roles="${view_and_admin_groups}"/>
+        <access method="create*" roles="${admin_groups}"/>
+        <access method="delete*" roles="${admin_groups}"/>
+        <access method="send*" roles="${admin_groups}"/>
+        <access method="*" roles="${admin_groups}"/>
+    </match>
+</role-access>
