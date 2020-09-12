@@ -18,6 +18,7 @@
 <management-context xmlns="http://activemq.org/schema">
    <!--<connector connector-port="1099"/>-->
    <authorisation>    
+     <whitelist></whitelist>
      <role-access>
          <match domain="org.apache.activemq.artemis">
             <access method="list*" roles="admin"/>
