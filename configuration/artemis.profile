@@ -49,6 +49,5 @@ fi
 # Debug args: Uncomment to enable debug
 #DEBUG_ARGS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"
 
-JAVA_ARGS="$JAVA_ARGS -Dhawtio.roles=${view_and_admin_groups}"
--Djavax.net.ssl.trustStore="${LDAP_TRUST_STORE_LOCATION} -Djavax.net.ssl.trustStorePassword=${LDAP_TRUST_STORE_PASSWORD}"
+JAVA_ARGS="$JAVA_ARGS -Dhawtio.roles=${view_and_admin_groups} -Djavax.net.ssl.trustStore=${LDAP_TRUST_STORE_LOCATION} -Djavax.net.ssl.trustStorePassword=${LDAP_TRUST_STORE_PASSWORD}"
 
