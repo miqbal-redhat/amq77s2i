@@ -1,14 +1,13 @@
 #!/bin/sh
 # Called during the image build life cycle.
 
-CONFIG="/tmp/src/config"
-pwd
 ls
-echo $CONFIG
+echo $AMQ_HOME/conf/
+echo "Copying config files..."
+cp -rfv artemis.profile $AMQ_HOME/conf/
+cp -rfv login.config $AMQ_HOME/conf/
+cp -rfv management.xml $AMQ_HOME/conf/
+echo "Done"
 
-if [ -d $CONFIG ]; then
-    echo "Copying config files..."
-    cp -rfv $CONFIG/* $AMQ_HOME/etc/
-    echo "Done"
-fi
+
 
