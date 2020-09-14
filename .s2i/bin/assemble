@@ -1,4 +1,11 @@
 #!/bin/sh
 # Called during the image build life cycle.
 
-    echo "Creating custome image..."
+CONFIG="/tmp/src/config"
+
+if [ -d $CONFIG ]; then
+    echo "Copying config files..."
+    cp -rfv $CONFIG/* $AMQ_HOME/conf/
+    echo "Done"
+fi
+
