@@ -2,7 +2,10 @@
 # Called during the image build life cycle.
 
 SRC_CONFIG="/tmp/src/configuration"
-DEST_DEST="/opt/amq/conf"
+DEST_CONFIG="/opt/amq/conf"
 
-ls $SRC_CONFIG
-ls $DEST_DEST
+if [ -d $SRC_CONFIG ]; then
+    echo "Copying config files..."
+    cp -rfv $SRC_CONFIG/* $DEST_DEST/
+    echo "Done"
+fi
