@@ -3,5 +3,7 @@
 
 pwd
 ls 
+cd ..
+ls
 
 
