@@ -4,6 +4,6 @@
 pwd
 ls 
 cd ..
-ls /opt/conf/
+ls /opt/amq/conf
 
 
