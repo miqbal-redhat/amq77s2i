@@ -5,7 +5,7 @@ CONFIG="/tmp/src/config"
 
 if [ -d $CONFIG ]; then
     echo "Copying config files..."
-    cp -rfv $CONFIG/* $AMQ_HOME/conf/
+    cp -rfv $CONFIG/* $AMQ_HOME/etc/
     echo "Done"
 fi
 
