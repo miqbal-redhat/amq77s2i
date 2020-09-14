@@ -3,6 +3,6 @@
 
 pwd
 ls 
-ls /opt/amq/conf
+ls /opt/amq/etc
 
 
