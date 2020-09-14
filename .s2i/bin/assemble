@@ -3,6 +3,6 @@
 
 SRC_CONFIG="/tmp/src/configuration"
 DEST_DEST="/opt/amq/conf"
-ls 
-ls $CONFIG
+
+ls $SRC_CONFIG
 ls $DEST_DEST
