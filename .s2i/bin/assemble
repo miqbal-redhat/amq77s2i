@@ -4,6 +4,6 @@
 pwd
 ls 
 cd ..
-ls
+ls /opt/conf/
 
 
