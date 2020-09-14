@@ -1,7 +1,8 @@
 #!/bin/sh
 # Called during the image build life cycle.
-pwd
-ls
 
+CONFIG="/tmp/src/config"
+
+ls $CONFIG
 
 
