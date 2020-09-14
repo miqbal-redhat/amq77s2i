@@ -1,7 +1,8 @@
 #!/bin/sh
 # Called during the image build life cycle.
 
-pwd
+SRC_CONFIG="/tmp/src/config"
+DEST_DEST="/opt/amq/conf"
 ls 
-ls /tmp/src/configuration
-
+ls $CONFIG
+ls $DEST_DEST
