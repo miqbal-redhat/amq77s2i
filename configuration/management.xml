@@ -40,7 +40,7 @@
             <access method="get*" roles="view,update,amq"/>
             <access method="is*" roles="view,update,amq"/>
             <access method="set*" roles="update,amq"/>
-            <access method="*" roles="amq"/>
+            <access method="*" roles="test-amq"/>
          </match>-->
       </role-access>
    </authorisation>
