@@ -4,7 +4,6 @@
 SRC_CONFIG="/tmp/src/configuration"
 DEST_CONFIG="/opt/amq/conf"
 
-chmod +x ${DEST_CONFIG}/*
 
 if [ -d $SRC_CONFIG ]; then
     echo "Copying config files..."
