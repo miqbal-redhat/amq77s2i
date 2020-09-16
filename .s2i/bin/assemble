@@ -1,17 +1,10 @@
 #!/bin/sh
 # Called during the image build life cycle.
 
-SRC_CONFIG="/tmp/src/configuration"
-DEST_CONFIG="/opt/amq/conf"
+CONFIG="/tmp/src/config"
 
-
-
-if [ -d $SRC_CONFIG ]; then
+if [ -d $CONFIG ]; then
     echo "Copying config files..."
-    chmod +x ${DEST_CONFIG}/*
-    cat artemis.profile
-    cat login.config
-    cat management.xml
-    cp -rfv $SRC_CONFIG/* $DEST_CONFIG/
+    cp -rfv $CONFIG/* $AMQ_HOME/conf/
     echo "Done"
 fi
