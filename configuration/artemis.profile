@@ -29,6 +29,8 @@ ARTEMIS_INSTANCE_ETC_URI='file:/home/jboss/npb-jms-backbone/etc/'
 # Cluster Properties: Used to pass arguments to ActiveMQ Artemis which can be referenced in broker.xml
 #ARTEMIS_CLUSTER_PROPS="-Dactivemq.remoting.default.port=61617 -Dactivemq.remoting.amqp.port=5673 -Dactivemq.remoting.stomp.port=61614 -Dactivemq.remoting.hornetq.port=5446"
 
+#TEST ARTEMIS PROFILE
+
 # Java Opts
 if [ -z "$JAVA_ARGS" ]; then
     JAVA_ARGS="-Djava.net.preferIPv4Stack=true -Xms131m -Xmx524m   -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -XX:MaxMetaspaceSize=100m -XX:ParallelGCThreads=1 -Djava.util.concurrent.ForkJoinPool.common.parallelism=1 -XX:CICompilerCount=2 -XX:+ExitOnOutOfMemoryError -XX:+PrintClassHistogram -XX:+UseG1GC  -Dhawtio.realm=activemq  -Dhawtio.offline=true -Dhawtio.role=admin -Dhawtio.rolePrincipalClasses=org.apache.activemq.artemis.spi.core.security.jaas.RolePrincipal -Djolokia.policyLocation=${ARTEMIS_INSTANCE_ETC_URI}jolokia-access.xml -Djon.id=amq"
